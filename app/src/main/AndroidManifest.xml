@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.weebly.nsgamezz.tictactoe">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Player1Activity"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".Player2Activity"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".About"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Player1ActivityImpossible"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Player1ActivityDifficult"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Settings"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Profile"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Player2Activity2Devices"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9858435316265616~9201601163" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5732338836a2454a7e2a7db9f05874f8086b3a90" />
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+</manifest>
